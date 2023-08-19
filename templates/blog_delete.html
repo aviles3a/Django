@@ -1,0 +1,13 @@
+<h3><a href="{% url 'home' %}"> Home </a></h3>
+
+<h4><a href = "{% url 'blog:home' %}"> Back </a> </h4>
+
+<h2> delete page </h2>
+
+<h2> Are you sure ? </h2>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button tipe="submit">Delete</button>
+</form>
